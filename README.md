@@ -3,7 +3,7 @@
 ## Programowanie w językach skryptowych 
 sem. IV, 2024/25
 
-## Struktura
+## Struktura repozytorium
 - Lab_1/
 - Lab_2/
 
