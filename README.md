@@ -4,6 +4,7 @@
 sem. IV, 2024/25
 
 ## Link do github pages: 
+tu będzie link jak zrobię
 
 ## Struktura repozytorium
 - Lab_1/
