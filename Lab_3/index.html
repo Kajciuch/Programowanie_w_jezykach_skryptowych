@@ -2,38 +2,150 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title></title>
+    <title>Kaja Thiel 21310</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .photo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .photo img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .aktualnosci {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .aktualnosci h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+
+        .aktualnosci ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .aktualnosci li {
+            margin-bottom: 15px;
+        }
+
+        .aktualnosci a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .aktualnosci a:hover {
+            color: #3498db;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .button-container a button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button-container a button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <header>
+    <div class="container">
+        <header>
+            <h1>Kaja Thiel 21310</h1>
+            <div class="description">
+                <p>Opis do uzupełnienia...</p>
+            </div>
+        </header>
+
+        <div class="photo">
+            <img src="panda.jpg" alt="Zdjęcie pandy">
+        </div>
+
         <div class="button-container">
-            <a href="index.html"><button class="p0">Główna</button></a>
-            <a href="https://github.com/Kajciuch" target="_blank"><button class="p1">GitHub</button></a>
+            <a href="index.html"><button>Główna</button></a>
+            <a href="https://github.com/Kajciuch" target="_blank"><button>GitHub</button></a>
         </div>
-    </header>
-    <main>
-        <div class="aktualnosci">
-            <h2>:</h2>
-            <h3>Pliki laboratorium 21310:</h3>
-        
-            <ul>
-                <li>
-                    <a href="https://github.com/Kajciuch/Programowanie_w_jezykach_skryptowych/blob/main/Lab_1/index.html" target = "blank">
-                        <span class="icon">📁</span> Lab_1 - Wykonanie laboratorium nr 1
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Kajciuch/Programowanie_w_jezykach_skryptowych/blob/main/Lab_2/index.html" target = "blank">
-                        <span class="icon">📂</span> Lab_2 - Wykonanie laboratorium nr 2
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-    
-    </main>
-</div>
+
+        <main>
+            <div class="aktualnosci">
+                <h2>Laboratoria</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Kajciuch/Programowanie_w_jezykach_skryptowych/blob/main/Lab_1/index.html" target="_blank">
+                            <span class="icon">📁</span> Lab_1 - Temat laboratorium 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Kajciuch/Programowanie_w_jezykach_skryptowych/blob/main/Lab_2/index.html" target="_blank">
+                            <span class="icon">📂</span> Lab_2 - Temat laboratorium 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="LINK_DO_LAB3" target="_blank">
+                            <span class="icon">📄</span> Lab_3 - Temat laboratorium 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
