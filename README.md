@@ -4,8 +4,8 @@
 sem. IV, 2024/25
 
 ## Link do github pages: 
-[file:///C:/Users/haszt/Documents/GitHub/Programowanie_w_jezykach_skryptowych/Lab_3/index.html](https://kajciuch.github.io/Programowanie_w_jezykach_skryptowych/Lab_3/
-)
+[Otwórz](https://kajciuch.github.io/Programowanie_w_jezykach_skryptowych/Lab_3/)
+
 
 ## Struktura repozytorium
 - Lab_1/
