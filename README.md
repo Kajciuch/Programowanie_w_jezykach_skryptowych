@@ -10,5 +10,6 @@ sem. IV, 2024/25
 ## Struktura repozytorium
 - Lab_1/
 - Lab_2/
+- Lab_3/
 
 
