@@ -8,10 +8,10 @@ sem. IV, 2024/25
 
 
 ## Struktura repozytorium
-- ImieNazwiskoNrIndeksu/
-- /Lab1
-- /Lab2
-- /Lab3
-- /Lab4
-- /Lab5
+- Kaja Thiel 21310/
+- /Lab_1
+- /Lab_2
+- /Lab_3
+- /Lab_4
+- /Lab_5
 
