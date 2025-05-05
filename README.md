@@ -14,4 +14,8 @@ sem. IV, 2024/25
 - /Lab_3
 - /Lab_4
 - /Lab_5
+- /Lab_6
+- /Lab_7dev
+- /Lab_7prod
+
 
