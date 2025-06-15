@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React, { useState, useEffect, useContext, createContext } from 'react';
+import ThemeToggle from './components/ThemeToggle';
+import SearchPlanet from './components/SearchPlanet';
+import Astronauts from './components/Astronauts';
+import Footer from './components/Footer';
 import './App.css';
 
+// Context dla motywu
+export const ThemeContext = createContext();
+
 function App() {
+  const [dark, setDark] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContext.Provider value={{ dark, setDark }}>
+      <div className={dark ? 'App dark' : 'App light'}>
+        <ThemeToggle />
+        <h1>Misje kosmiczne 🚀</h1>
+        <SearchPlanet />
+        <Astronauts />
+        <Footer />
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
