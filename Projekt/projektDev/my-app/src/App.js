@@ -10,6 +10,7 @@ import { ThemeProvider } from './theme.js';
 function App() {
   return (
     <ThemeProvider>
+      <Header/>
       <DarkModeToggle />
       <SearchPlanet />
       <Astronauts />

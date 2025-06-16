@@ -6,7 +6,7 @@ export default function DarkModeToggle() {
 
   return (
     <button onClick={toggleDarkMode}>
-      Tryb: {darkMode ? 'Ciemny' : 'Jasny'}
+      {darkMode ? '🌚' : '🌞'}
     </button>
   );
 }
