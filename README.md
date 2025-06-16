@@ -5,6 +5,7 @@ sem. IV, 2024/25
 
 ## Link do github pages
 [Otwórz](https://kajciuch.github.io/Programowanie_w_jezykach_skryptowych/KajaThiel21310/Lab_3/)
+[PROJEKT](https://kajciuch.github.io/Programowanie_w_jezykach_skryptowych/KajaThiel21310/Projekt/projektProd)
 
 
 ## Struktura repozytorium
