@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Programowanie_w_jezykach_skryptowych/Projekt/projektprod/static/css/main.e6c13ad2.css",
+    "main.js": "/Programowanie_w_jezykach_skryptowych/Projekt/projektprod/static/js/main.aa2bf810.js",
+    "static/js/453.ed3810f9.chunk.js": "/Programowanie_w_jezykach_skryptowych/Projekt/projektprod/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/Programowanie_w_jezykach_skryptowych/Projekt/projektprod/index.html",
+    "main.e6c13ad2.css.map": "/Programowanie_w_jezykach_skryptowych/Projekt/projektprod/static/css/main.e6c13ad2.css.map",
+    "main.aa2bf810.js.map": "/Programowanie_w_jezykach_skryptowych/Projekt/projektprod/static/js/main.aa2bf810.js.map",
+    "453.ed3810f9.chunk.js.map": "/Programowanie_w_jezykach_skryptowych/Projekt/projektprod/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.aa2bf810.js"
+  ]
+}
