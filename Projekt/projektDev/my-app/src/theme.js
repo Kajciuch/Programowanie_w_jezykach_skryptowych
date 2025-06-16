@@ -1,25 +1,35 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const ThemeContext = createContext();
 
-export function ThemeProvider({ children }) {
+export const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
-  const toggleDarkMode = () => setDarkMode(prev => !prev);
 
-  const themeStyle = {
-    backgroundColor: darkMode ? '#000' : '#ccf',
-    color: darkMode ? '#fff' : '#000',
-    backgroundImage: `url(${darkMode ? '/space.jpg' : '/earth.jpg'})`,
-    backgroundSize: 'cover',
-    minHeight: '100vh',
-    padding: '1em'
+  const setBackgroundImage = (isDark) => {
+    document.body.style.backgroundImage = `url(${process.env.PUBLIC_URL}/${isDark ? 'space.jpg' : 'earth.jpg'})`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.transition = 'background-image 0.5s ease-in-out';
+    document.body.style.color = isDark ? '#f1f1f1' : 'black';
   };
+
+  const toggleDarkMode = () => {
+    setDarkMode(prev => {
+      const newMode = !prev;
+      setBackgroundImage(newMode);
+      return newMode;
+    });
+  };
+
+  // apply default background on load
+  useEffect(() => {
+    setBackgroundImage(darkMode);
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
-      <div style={themeStyle}>
-        {children}
-      </div>
+      {children}
     </ThemeContext.Provider>
   );
-}
+};

@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer style={footerStyle}>
-      <p>© 2025 Twoje Imię. Wszelkie prawa zastrzeżone.</p>
+      <p>© 2025 Strona Kai. Wszelkie prawa zastrzeżone.</p>
     </footer>
   );
 };
@@ -13,12 +13,8 @@ const footerStyle = {
   color: "white",
   padding: "10px",
   textAlign: "center",
-  position: "fixed",
-  bottom: 0,
-  left: 0,
-  width: "100%",
-  backgroundColol: "black", // może być też np. "black"
-  zIndex: 1000,
+  backgroundColor: "black",
+  marginTop: "auto",
 };
 
 export default Footer;
