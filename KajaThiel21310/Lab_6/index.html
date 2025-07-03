@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz – Lab 6</title>
+  <script>
+    let score = 0;
+    let q = 0;
+
+    const questions = [
+      ['Stolica Polski?', 'Warszawa'],
+      ['2 + 2 = ?', '4'],
+      ['Jaki język uczymy się na tych zajęciach?', 'JavaScript']
+    ];
+
+    function testQuestion(question) {
+      const answer = document.getElementById('answer').value;
+      if (answer.trim().toLowerCase() === question[1].toLowerCase()) {
+        score++;
+        alert("Dobrze!");
+      } else {
+        alert("Źle! Poprawna odpowiedź: " + question[1]);
+      }
+    }
+
+    function nextQuestion() {
+      if (q < questions.length) {
+        document.getElementById('question').innerText = questions[q][0];
+        document.getElementById('answer').value = '';
+      } else {
+        document.getElementById('quiz').innerHTML = 
+          `<p>Koniec quizu! Twój wynik: ${score} z ${questions.length}</p>`;
+      }
+    }
+
+    function handleClick() {
+      if (q < questions.length) {
+        testQuestion(questions[q]);
+        q++;
+        nextQuestion();
+      }
+    }
+
+    window.onload = () => {
+      nextQuestion();
+    };
+  </script>
+</head>
+<body>
+  <section id="Projekt 1">
+    <h1>Quiz – Lab 6</h1>
+    <p id="question"></p>
+    <input type="text" id="answer" placeholder="Twoja odpowiedź">
+    <button onclick="handleClick()">Następne pytanie</button>
+  </section>
+</body>
+</html>
