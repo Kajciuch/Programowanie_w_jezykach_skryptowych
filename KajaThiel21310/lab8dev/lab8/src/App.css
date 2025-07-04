@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #3f51b5;
+}
+
+h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #303f9f;
+}
+
+.dropdown {
+  margin-left: 10px;
+  padding: 6px;
+  border-radius: 5px;
+}
+.question-block {
+  margin-bottom: 1rem;
+  background-color: #eef;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
